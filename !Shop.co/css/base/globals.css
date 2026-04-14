@@ -1,0 +1,83 @@
+.page {
+	font-family: var(--font-family);
+	font-weight: 400;
+	color: var(--main-color);
+	scroll-behavior: smooth;
+	scroll-padding-top: 98px;
+	scrollbar-gutter: stable;
+}
+
+.page__body {
+	min-width: 390px;
+
+	/* для удобства */
+	min-height: 200vh;
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.container {
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	margin: 0 auto;
+}
+
+img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+	outline: 1px solid var(--main-color);
+	outline-offset: 2px;
+}
+
+.transform-xs {
+	transition: transform var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.transform-xs:hover {
+		transform: translateY(var(--transform-offset-1));
+	}
+}
+
+.text-regular {
+	color: var(--text-color);
+}
+
+@media (width > 576px) {
+	.text-regular {
+		font-size: 16px;
+		line-height: 138%;
+	}
+}
+
+@media (width <= 576px) {
+	.text-regular {
+		font-size: 14px;
+		line-height: 157%;
+	}
+}
+
+.button {
+	display: inline-flex;
+	padding: 16px 54px;
+	border-radius: var(--border-radius-1);
+	border: var(--border-1);
+}
+
+@media (width > 576px) {
+	.section {
+		padding-bottom: 140px;
+	}
+}
+
+@media (width <= 576px) {
+	.section {
+		padding-bottom: 80px;
+	}
+}

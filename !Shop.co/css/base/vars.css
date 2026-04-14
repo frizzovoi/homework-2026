@@ -1,0 +1,49 @@
+:root {
+	/* font-family */
+	--font-family: "Satoshi", sans-serif;
+	--second-family: "IntegralCF-H", sans-serif;
+	--third-family: "IntegralCF-B", sans-serif;
+
+	/* colors */
+	--main-color: #000;
+	--text-color: #00000099;
+    --border-color: #0000001a;
+	/* --main-glow-color: #ffffff4d; */
+	--accent-color: #fff;
+	/* --accent-glow-color: #ffea004d; */
+	--bg-color: #f0f0f0;
+	--input-text: #00000066;
+	/* --secondary-color: #c9c69b; */
+	/* --disabled-color: #5d5d56; */
+	/* --disabled-glow-color: #5d5d564d; */
+	--shadow-color: #00000066;
+	/* --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%); */
+
+	/* shadows */
+	/* --shadow-glow: 0 0 6px 2px var(--main-glow-color); */
+	/* --shadow-accent-glow: 0 0 6px 2px var(--accent-glow-color); */
+	/* --shadow-disabled-glow: 0 0 6px 2px var(--disabled-glow-color); */
+
+	/* container */
+	--container-width: 1240px;
+    --container-width-1: 1440px;
+	--container-padding: 15px;
+
+    /* borders */
+    --border-radius-1: 62px;
+    --border-1: 1px solid var(--border-color);
+
+	/* transitions */
+	--opacity-transition: 0.75;
+	--transition-time: 0.3s;
+
+    /* transforms */
+    --transform-offset-1: -3px;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+}
