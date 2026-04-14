@@ -17,8 +17,8 @@
 }
 
 .hero__content {
-	position: sticky;
-	z-index: var(--layer-3);
+	position: relative;
+	z-index: var(--layer-2);
 }
 
 .hero__content-title {
@@ -81,21 +81,21 @@
 }
 
 .hero__media-image {
-	right: 0;
+	right: 13%;
 	bottom: -100%;
 	transform: translateY(-99.1%);
 }
 
 .hero__media-sparkle {
-	z-index: var(--layer-3);
+	z-index: var(--layer-1);
 }
 
 .hero__media-sparkle[width="104"] {
-	right: 5.5%;
-	top: 0;
+	right: 17%;
+	top: 13%;
 }
 
 .hero__media-sparkle[width="56"] {
-	right: 43%;
+	right: 45.6%;
 	top: 45%;
 }
