@@ -77,7 +77,6 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	max-width: 248px;
 	width: 100%;
 }
 
@@ -90,6 +89,7 @@
 @media (width > 576px) {
 	.footer__header {
 		gap: 25px;
+		max-width: 248px;
 	}
 }
 
