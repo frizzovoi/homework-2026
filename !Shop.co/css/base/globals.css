@@ -1,16 +1,8 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .page {
 	font-family: var(--font-family);
 	font-weight: 400;
 	color: var(--main-color);
 	scroll-behavior: smooth;
-	scroll-padding-top: 98px;
 	scrollbar-gutter: stable;
 }
 
@@ -40,71 +32,81 @@ input:focus {
 }
 
 .transform-xs {
-	-webkit-transition: -webkit-transform var(--transition-time),
-    -webkit-box-shadow var(--transition-time);
-	transition: -webkit-transform var(--transition-time),
-    -webkit-box-shadow var(--transition-time);
-	-o-transition: transform var(--transition-time),
-    box-shadow var(--transition-time);
-	transition: transform var(--transition-time),
-    box-shadow var(--transition-time);
-	transition: transform var(--transition-time),
-    box-shadow var(--transition-time),
-    -webkit-transform var(--transition-time),
-    -webkit-box-shadow var(--transition-time);
+	-webkit-transition:
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
+	transition:
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
+	-o-transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time);
+	transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time);
+	transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time),
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
 }
 
 .transform-md {
-	-webkit-transition: -webkit-transform var(--transition-time),
-    -webkit-box-shadow var(--transition-time);
-	transition: -webkit-transform var(--transition-time),
-    -webkit-box-shadow var(--transition-time);
-	-o-transition: transform var(--transition-time),
-    box-shadow var(--transition-time);
-	transition: transform var(--transition-time),
-    box-shadow var(--transition-time);
-	transition: transform var(--transition-time),
-    box-shadow var(--transition-time),
-    -webkit-transform var(--transition-time),
-    -webkit-box-shadow var(--transition-time);
+	-webkit-transition:
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
+	transition:
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
+	-o-transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time);
+	transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time);
+	transition:
+		transform var(--transition-time),
+		box-shadow var(--transition-time),
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
 }
 
 .opacity-xs {
 	-webkit-transition:
 		opacity var(--transition-time),
-        -webkit-transform var(--transition-time),
-        -webkit-box-shadow var(--transition-time);
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
 	transition:
 		opacity var(--transition-time),
-        -webkit-transform var(--transition-time),
-        -webkit-box-shadow var(--transition-time);
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
 	-o-transition:
 		transform var(--transition-time),
-        box-shadow var(--transition-time),
+		box-shadow var(--transition-time),
 		opacity var(--transition-time);
 	transition:
 		transform var(--transition-time),
-        box-shadow var(--transition-time),
+		box-shadow var(--transition-time),
 		opacity var(--transition-time);
 	transition:
 		transform var(--transition-time),
-        box-shadow var(--transition-time),
+		box-shadow var(--transition-time),
 		opacity var(--transition-time),
-        -webkit-transform var(--transition-time),
-        -webkit-box-shadow var(--transition-time);
+		-webkit-transform var(--transition-time),
+		-webkit-box-shadow var(--transition-time);
 }
 
 @media (any-hover: hover) {
 	.transform-xs:hover {
 		-webkit-transform: translateY(var(--transform-offset-1));
-		    -ms-transform: translateY(var(--transform-offset-1));
-		        transform: translateY(var(--transform-offset-1));
+		-ms-transform: translateY(var(--transform-offset-1));
+		transform: translateY(var(--transform-offset-1));
 	}
 
 	.transform-md:hover {
 		-webkit-transform: translateY(var(--transform-offset-2));
-		    -ms-transform: translateY(var(--transform-offset-2));
-		        transform: translateY(var(--transform-offset-2));
+		-ms-transform: translateY(var(--transform-offset-2));
+		transform: translateY(var(--transform-offset-2));
 	}
 
 	.opacity-xs:hover {
