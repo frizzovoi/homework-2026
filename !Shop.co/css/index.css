@@ -11,4 +11,13 @@
 @import "./blocks/header.css";
 @import "./blocks/stats.css";
 @import "./blocks/hero.css";
+@import "./blocks/brands.css";
+@import "./blocks/new-arrivals.css";
+@import "./blocks/product-card.css";
+@import "./blocks/top-selling.css";
+@import "./blocks/styles.css";
+@import "./blocks/about-us.css";
+@import "./blocks/reviews.css";
+@import "./blocks/subscribe.css";
 @import "./blocks/footer.css";
+@import "./blocks/socials.css";

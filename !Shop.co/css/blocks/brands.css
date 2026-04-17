@@ -1,0 +1,180 @@
+.brands {
+	background-color: var(--main-color);
+}
+
+.brands__container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	max-width: 1240px;
+	height: 122px;
+}
+
+.brands__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-inline: auto;
+	gap: 106px;
+}
+
+.brands__link {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.brands__logo {
+	max-height: 38px;
+	min-height: 23px;
+}
+
+@media (width <= 1300px) {
+	.brands__list {
+		-webkit-column-gap: clamp(24px, -12.631rem + 23.7vw, 106px);
+		-moz-column-gap: clamp(24px, -12.631rem + 23.7vw, 106px);
+		column-gap: clamp(24px, -12.631rem + 23.7vw, 106px);
+	}
+}
+
+@media (width <= 992px) {
+	.brands__list {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.versace-logo {
+		width: 117px;
+		height: 24px;
+	}
+
+	.zara-logo {
+		width: 64px;
+		height: 27px;
+	}
+
+	.gucci-logo {
+		width: 110px;
+		height: 26px;
+	}
+
+	.prada-logo {
+		width: 127px;
+		height: 21px;
+	}
+
+	.calvin-logo {
+		width: 135px;
+		height: 22px;
+	}
+}
+
+@media (width <= 768px) {
+	.brands__container {
+		height: 146px;
+	}
+
+	.brands__list {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr)
+			34px minmax(0, 1fr);
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-column-gap: 34px;
+		-moz-column-gap: 34px;
+		column-gap: 34px;
+		row-gap: 20px;
+	}
+
+	.brands__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.brands__item:nth-child(1) {
+		-ms-grid-column: 1;
+		grid-column: 1;
+	}
+
+	.brands__item:nth-child(2) {
+		-ms-grid-column: 2;
+		grid-column: 2;
+	}
+
+	.brands__item:nth-child(3) {
+		-ms-grid-column: 3;
+		grid-column: 3;
+	}
+
+	.brands__item:nth-child(4) {
+		-ms-grid-column: 4;
+		grid-column: 4;
+	}
+
+	.brands__item:nth-child(5) {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 2;
+		grid-column: 2 / 4;
+	}
+
+	.brands__logo {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media (width <= 576px) {
+	.brands__list {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+
+	.brands__item:nth-child(1) {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+		grid-column: 1 / 3;
+	}
+
+	.brands__item:nth-child(2) {
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 2;
+		grid-column: 3 / 5;
+	}
+
+	.brands__item:nth-child(3) {
+		-ms-grid-column: 5;
+		-ms-grid-column-span: 2;
+		grid-column: 5 / 7;
+	}
+
+	.brands__item:nth-child(4) {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 2;
+		grid-column: 2 / 4;
+	}
+
+	.brands__item:nth-child(5) {
+		-ms-grid-column: 4;
+		-ms-grid-column-span: 2;
+		grid-column: 4 / 6;
+	}
+}

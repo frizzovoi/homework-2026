@@ -1,0 +1,126 @@
+.reviews__controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 16px;
+}
+
+.reviews__slider-button--prev-icon,
+.reviews__slider-button--next-icon {
+	opacity: 1;
+}
+
+@media (any-hover: hover) {
+	.reviews__slider-button--prev-icon:hover {
+		-webkit-transform: translateX(var(--transform-offset-1));
+		-ms-transform: translateX(var(--transform-offset-1));
+		transform: translateX(var(--transform-offset-1));
+	}
+
+	.reviews__slider-button--next-icon:hover {
+		-webkit-transform: translateX(var(--transform-offset-3));
+		-ms-transform: translateX(var(--transform-offset-3));
+		transform: translateX(var(--transform-offset-3));
+	}
+}
+
+@media (width <= 768px) {
+	.reviews__slider-wrapper {
+		padding-top: 24px;
+	}
+}
+
+@media (width > 768px) {
+	.reviews__slider-wrapper {
+		padding-top: 40px;
+	}
+}
+
+.reviews__slide {
+	height: auto;
+	cursor: -webkit-grab;
+	cursor: grab;
+	border: var(--border-1);
+	border-radius: var(--border-radius-2);
+}
+
+@media (width <= 768px) {
+	.reviews__slide {
+		width: 358px;
+	}
+}
+
+@media (width > 768px) {
+	.reviews__slide {
+		width: 400px;
+	}
+}
+
+.reviews__slide:active {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+.reviews__slide-inner {
+	padding: 28px 32px;
+}
+
+.reviews__slide-rating {
+	margin-bottom: 15px;
+}
+
+.reviews__slide-author {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 4px;
+	margin-bottom: 12px;
+}
+
+.reviews__slide-name {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 110%;
+	color: #000;
+}
+
+@media (width <= 768px) {
+	.reviews__slide-text {
+		line-height: 143%;
+	}
+}
+
+/* SWIPER-SLIDER RESTYLING */
+.swiper-slide {
+	-webkit-transition: -webkit-filter var(--transition-time);
+	transition: -webkit-filter var(--transition-time);
+	-o-transition: filter var(--transition-time);
+	transition: filter var(--transition-time);
+	transition:
+		filter var(--transition-time),
+		-webkit-filter var(--transition-time);
+}
+
+@media (width <= 576px) {
+	.swiper-slide,
+	.swiper-slide-visible {
+		-webkit-filter: blur(1.5px);
+		filter: blur(1.5px);
+	}
+}
+
+@media (width > 576px) {
+	.swiper-slide,
+	.swiper-slide-visible {
+		-webkit-filter: var(--blur-transition);
+		filter: var(--blur-transition);
+	}
+}
+
+.swiper-slide-fully-visible {
+	-webkit-filter: none;
+	filter: none;
+}

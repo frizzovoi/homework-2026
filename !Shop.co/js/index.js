@@ -1,6 +1,6 @@
 import BurgerMenu from "./burger.js";
-// import Modal from "./modal.js";
 import { promoBar } from "./promo-bar.js";
+import { reviewsSlider } from "./reviews-slider.js";
 
 try {
 	new BurgerMenu({
@@ -25,6 +25,7 @@ try {
 	// });
 
 	promoBar();
+	reviewsSlider();
 } catch (error) {
 	console.error(error);
 }
