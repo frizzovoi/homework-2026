@@ -1,0 +1,100 @@
+.promo-bar {
+	background-color: #000;
+	-webkit-transition:
+		opacity var(--transition-time),
+		margin-top var(--transition-time),
+		-webkit-transform var(--transition-time);
+	transition:
+		opacity var(--transition-time),
+		margin-top var(--transition-time),
+		-webkit-transform var(--transition-time);
+	-o-transition:
+		opacity var(--transition-time),
+		transform var(--transition-time),
+		margin-top var(--transition-time);
+	transition:
+		opacity var(--transition-time),
+		transform var(--transition-time),
+		margin-top var(--transition-time);
+	transition:
+		opacity var(--transition-time),
+		transform var(--transition-time),
+		margin-top var(--transition-time),
+		-webkit-transform var(--transition-time);
+	overflow: hidden;
+}
+
+.promo-bar--hidden {
+	margin-top: -38px;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.promo-bar__container {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-block: 9px;
+	max-height: 38px;
+	height: 38px;
+	overflow: hidden;
+}
+
+.promo-bar__discount,
+.promo-bar__link {
+	font-size: 14px;
+	color: var(--accent-color);
+}
+
+@media (width > 768px) {
+	.promo-bar__discount {
+		display: inline-block;
+	}
+}
+
+@media (width <= 768px) {
+	.promo-bar__discount {
+		display: none;
+	}
+}
+
+.promo-bar__link {
+	text-decoration: underline;
+}
+
+.promo-bar__link,
+.promo-bar__close {
+	-webkit-transition: opacity var(--transition-time);
+	-o-transition: opacity var(--transition-time);
+	transition: opacity var(--transition-time);
+}
+
+@media (any-hover: hover) {
+	.promo-bar__link:hover,
+	.promo-bar__close:hover {
+		opacity: var(--opacity-transition);
+	}
+}
+
+.promo-bar__close {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	cursor: pointer;
+}

@@ -1,0 +1,55 @@
+:root {
+	/* font-family */
+	--font-family: "Satoshi", sans-serif;
+	--second-family: "IntegralCF-H", sans-serif;
+	--third-family: "IntegralCF-B", sans-serif;
+
+	/* colors */
+	--main-color: #000;
+	--text-color: #00000099;
+	--border-color-1: #0000001a;
+	--border-color-2: #00000033;
+	--accent-color: #fff;
+	--bg-color: #f0f0f0;
+	--input-text: #00000066;
+	--discount-text-color: #f33;
+	--discount-bg-color: #ff33331a;
+	--shadow-color: #00000066;
+	--shadow-color-xs: rgba(0, 0, 0, 0.2);
+	/* --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%); */
+
+	/* shadows */
+	--shadow-md: 0 10px 15px 5px var(--shadow-color);
+	--shadow-xs: 0 5px 20px 0px var(--shadow-color-xs);
+
+	/* container */
+	--container-width: 1240px;
+	--container-width-1: 1440px;
+	--container-padding: 16px;
+
+	/* borders */
+	--border-radius-1: 62px;
+	--border-radius-2: 20px;
+	--border-radius-3: 40px;
+	--border-1: 1px solid var(--border-color-1);
+	--border-2: 1px solid var(--border-color-2);
+
+	/* transitions */
+	--opacity-transition: 0.7;
+	--blur-transition: blur(4px);
+	--transition-time: 0.3s;
+
+	/* transforms */
+	--transform-offset-1: -3px;
+	--transform-offset-2: -5px;
+	--transform-offset-3: 3px;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+	--layer-4: 4;
+	--layer-5: 5;
+}
